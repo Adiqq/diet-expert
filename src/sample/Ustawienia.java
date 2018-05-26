@@ -3,6 +3,14 @@ package sample;
 public class Ustawienia
 {
     private Integer liczbaKalorii;
+    private Integer minBialka;
+    private Integer maxBialka;
+    private Integer minWegli;
+    private Integer maxWegli;
+    private Integer minTluszczu;
+    private Integer maxTluszczu;
+    private RodzajDiety rodzajDiety;
+    private Integer liczbaPosilkow;
 
     @Override
     public String toString() {
@@ -103,14 +111,5 @@ public class Ustawienia
     public void setLiczbaPosilkow(Integer liczbaPosilkow) {
         this.liczbaPosilkow = liczbaPosilkow;
     }
-
-    private Integer minBialka;
-    private Integer maxBialka;
-    private Integer minWegli;
-    private Integer maxWegli;
-    private Integer minTluszczu;
-    private Integer maxTluszczu;
-    private RodzajDiety rodzajDiety;
-    private Integer liczbaPosilkow;
 
 }

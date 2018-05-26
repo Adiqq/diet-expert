@@ -2,6 +2,8 @@ package sample;
 
 import com.sun.javaws.exceptions.InvalidArgumentException;
 
+import java.util.ArrayList;
+
 public enum RodzajDiety {
     Wszystko,
     Wege,
@@ -17,5 +19,13 @@ public enum RodzajDiety {
                 return RodzajDiety.IG;
         }
         throw new InvalidArgumentException(new String[] {dieta});
+    }
+
+    public static ArrayList<RodzajDiety> wszystkieDiety(){
+        ArrayList<RodzajDiety> diety = new ArrayList<>();
+        diety.add(Wszystko);
+        diety.add(Wege);
+        diety.add(IG);
+        return diety;
     }
 }
